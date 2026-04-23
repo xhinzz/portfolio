@@ -1,0 +1,10 @@
+{
+  "name": "noway-perfil",
+  "private": true,
+  "scripts": {
+    "build-images": "node convert-to-webp.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  }
+}
