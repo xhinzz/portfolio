@@ -302,6 +302,121 @@ button {
   display: grid;
 }
 
+.cv-section {
+  max-width: 760px;
+}
+
+.cv-block {
+  margin-bottom: 44px;
+}
+
+.cv-heading {
+  margin: 0 0 18px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-bottom: 6px;
+}
+
+.cv-item {
+  margin-bottom: 22px;
+}
+
+.cv-item:last-child {
+  margin-bottom: 0;
+}
+
+.cv-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 2px;
+}
+
+.cv-item-head strong {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.cv-item-head span {
+  font-size: 0.9rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.cv-role {
+  margin: 0 0 8px;
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.cv-item ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.cv-item li {
+  margin-bottom: 4px;
+  font-size: 0.94rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.cv-skills {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.cv-skills > div {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 14px;
+  align-items: baseline;
+}
+
+.cv-skills dt {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.cv-skills dd {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.cv-certs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-certs li {
+  font-size: 0.95rem;
+  padding: 4px 0;
+}
+
+.cv-certs strong {
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .cv-skills > div {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .cv-item-head {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
 .lightbox {
   position: fixed;
   inset: 0;
