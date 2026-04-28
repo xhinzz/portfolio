@@ -24,7 +24,7 @@ function renderProjects() {
 
     return `
       <article class="github-project">
-        <a class="github-embed github-embed--${escapeHtml(p.theme)}" href="${escapeHtml(p.url)}" target="_blank" rel="noreferrer" aria-label="Abrir ${escapeHtml(p.name)} no GitHub">
+        <a class="github-embed github-embed--${escapeHtml(p.theme)}" href="${escapeHtml(p.url)}" target="_blank" rel="noreferrer" aria-label="Open ${escapeHtml(p.name)} on GitHub">
           <div class="embed-topbar">
             <span class="embed-dot"></span>
             <div class="embed-heading">
@@ -105,7 +105,13 @@ sectionLinks.forEach((link) => {
   });
 });
 
-const initialSection = window.location.hash.replace("#", "");
+const sectionAliases = {
+  fotos: "photos",
+  sobre: "about"
+};
+
+const initialHash = window.location.hash.replace("#", "");
+const initialSection = sectionAliases[initialHash] || initialHash;
 if (initialSection) {
   setActiveSection(initialSection);
 }
@@ -118,7 +124,7 @@ function renderLightboxThumbs() {
     thumb.type = "button";
     thumb.className = "lightbox-thumb";
     thumb.style.backgroundImage = `url("${photo.src}")`;
-    thumb.setAttribute("aria-label", `Abrir ${photo.title}`);
+    thumb.setAttribute("aria-label", `Open ${photo.title}`);
     thumb.addEventListener("click", () => openLightbox(index));
     lightboxThumbs.appendChild(thumb);
   });
@@ -200,7 +206,7 @@ if (contactForm) {
     const data = new FormData(contactForm);
 
     submitBtn.disabled = true;
-    status.textContent = "Enviando...";
+    status.textContent = "Sending...";
     status.className = "form-status";
 
     try {
@@ -211,14 +217,14 @@ if (contactForm) {
       });
 
       if (response.ok) {
-        status.textContent = "Mensagem enviada! Obrigado.";
+        status.textContent = "Message sent. Thank you.";
         status.classList.add("is-success");
         contactForm.reset();
       } else {
-        throw new Error("Falha no envio");
+        throw new Error("Failed to send");
       }
     } catch (err) {
-      status.textContent = "Erro ao enviar. Tente novamente ou mande direto pelo email.";
+      status.textContent = "Could not send the message. Please try again or email me directly.";
       status.classList.add("is-error");
     } finally {
       submitBtn.disabled = false;

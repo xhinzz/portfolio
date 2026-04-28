@@ -1,5 +1,5 @@
-// Cada projeto vira um card na home.
-// theme: "one" ou "two" (controla o gradiente). Adicione novos temas em styles.css se quiser.
+// Each project becomes a card on the home page.
+// theme: "one" or "two" controls the gradient. Add new themes in styles.css if needed.
 window.PROJECTS = [
   {
     name: "AnimeList",
@@ -7,13 +7,13 @@ window.PROJECTS = [
     repo: "animelist",
     url: "https://github.com/xhinzz/animelist",
     theme: "one",
-    files: ["README.md", "src/", "public/", "package.json"],
+    files: ["app.py", "templates/", "static/", "requirements.txt"],
     paragraphs: [
-      "Aplicacao voltada para organizacao e consulta de listas de anime em uma interface direta.",
-      "Projeto ideal para destacar estrutura frontend, navegacao e apresentacao de dados.",
-      "Repositorio publico para mostrar evolucao tecnica e refinamento visual."
+      "A Flask app for browsing anime and manga using the Jikan API.",
+      "It has login, profile photos, watched anime lists, filters, sorting and dark mode.",
+      "I built it to practice backend work with SQLite/SQLAlchemy and simple Jinja templates."
     ],
-    cta: "Abrir GitHub"
+    cta: "Open GitHub"
   },
   {
     name: "PentestTool",
@@ -21,12 +21,12 @@ window.PROJECTS = [
     repo: "PentestTool",
     url: "https://github.com/xhinzz/PentestTool",
     theme: "two",
-    files: ["scanner/", "utils/", "reports/", "requirements.txt"],
+    files: ["security_scanner.rb", "README.md", "scan_results.txt"],
     paragraphs: [
-      "Ferramenta voltada para fluxos de pentest, reunindo utilidade tecnica em uma apresentacao limpa.",
-      "Boa vitrine para mostrar codigo mais funcional, orientado a seguranca e automacao.",
-      "Projeto forte para equilibrar portfolio visual com repertorio tecnico."
+      "A Ruby script for security testing in my own environments or authorized labs.",
+      "It checks connectivity, scans common ports, looks for endpoints and runs simple SQL injection tests.",
+      "The idea was to keep a few basic checks in one terminal tool with logs and a report."
     ],
-    cta: "Ver repositorio"
+    cta: "View repository"
   }
 ];

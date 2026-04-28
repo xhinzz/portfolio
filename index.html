@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucas Lima</title>
   <meta
     name="description"
-    content="Portfolio minimalista inspirado em um layout editorial centralizado, com projetos do GitHub e uma aba de fotos."
+    content="Minimal portfolio with an editorial layout, GitHub projects, photos, CV and contact information."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +21,13 @@
     <header class="site-header">
       <a class="site-logo" href="#home">LUCAS LIMA</a>
 
-      <div class="social-links" aria-label="Links sociais">
+      <div class="social-links" aria-label="Social links">
         <a href="https://github.com/xhinzz" target="_blank" rel="noreferrer" aria-label="GitHub">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.36 6.84 9.71.5.09.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .08 1.53 1.05 1.53 1.05.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.1 0-1.13.39-2.05 1.03-2.78-.1-.26-.45-1.31.1-2.74 0 0 .84-.28 2.75 1.06A9.3 9.3 0 0 1 12 6.84c.85 0 1.7.12 2.5.36 1.9-1.34 2.74-1.06 2.74-1.06.55 1.43.2 2.48.1 2.74.64.73 1.03 1.65 1.03 2.78 0 3.96-2.34 4.83-4.57 5.09.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"/>
           </svg>
         </a>
-        <a href="https://www.linkedin.com/in/lucastflimad" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/lucastflima" target="_blank" rel="noreferrer" aria-label="LinkedIn">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M4.98 3.5A2.49 2.49 0 0 0 2.5 6c0 1.37 1.1 2.5 2.48 2.5h.02A2.5 2.5 0 0 0 7.5 6a2.49 2.49 0 0 0-2.5-2.5h-.02ZM3 9.5h4v11H3v-11Zm6.5 0h3.83v1.5h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.72 4.8 6.26v5.29h-4v-4.69c0-1.12-.02-2.56-1.52-2.56-1.53 0-1.77 1.22-1.77 2.48v4.77h-4v-11Z"/>
           </svg>
@@ -40,18 +40,18 @@
         </a>
       </div>
 
-      <nav class="main-nav" aria-label="Navegacao principal">
+      <nav class="main-nav" aria-label="Main navigation">
         <a class="is-active" href="#home" data-section-link="home">HOME</a>
-        <a href="#fotos" data-section-link="fotos">FOTOS</a>
+        <a href="#photos" data-section-link="photos">PHOTOS</a>
         <a href="#cv" data-section-link="cv">CV</a>
-        <a href="#sobre" data-section-link="sobre">SOBRE</a>
+        <a href="#about" data-section-link="about">ABOUT</a>
       </nav>
     </header>
 
     <main class="site-main">
       <section id="home" class="page-section is-active" data-section="home" data-projects-mount></section>
 
-      <section id="fotos" class="page-section photos-section" data-section="fotos">
+      <section id="photos" class="page-section photos-section" data-section="photos">
         <div class="section-divider"></div>
         <div class="photo-grid"></div>
       </section>
@@ -132,7 +132,7 @@
         </div>
       </section>
 
-      <section id="sobre" class="page-section about-section" data-section="sobre">
+      <section id="about" class="page-section about-section" data-section="about">
         <div class="about-photo"></div>
 
         <div class="about-copy">
@@ -144,19 +144,19 @@
           </p>
 
           <div class="contact-block">
-            <strong>CONTATO</strong>
+            <strong>CONTACT</strong>
             <a href="mailto:lucastflima02@gmail.com">lucastflima02@gmail.com</a>
           </div>
 
           <form class="contact-form" action="https://formsubmit.co/lucastflima02@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Nome *" aria-label="Nome" required>
+            <input type="text" name="name" placeholder="Name *" aria-label="Name" required>
             <input type="email" name="email" placeholder="E-mail *" aria-label="E-mail" required>
-            <textarea name="message" placeholder="Mensagem *" aria-label="Mensagem" required></textarea>
-            <input type="hidden" name="_subject" value="Novo contato pelo portfolio">
+            <textarea name="message" placeholder="Message *" aria-label="Message" required></textarea>
+            <input type="hidden" name="_subject" value="New contact from portfolio">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-            <button type="submit">Enviar</button>
+            <button type="submit">Send</button>
             <p class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -165,14 +165,14 @@
   </div>
 
   <div class="lightbox" aria-hidden="true">
-    <button class="lightbox-close" type="button" aria-label="Fechar imagem">X</button>
-    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Imagem anterior"><</button>
+    <button class="lightbox-close" type="button" aria-label="Close image">X</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image"><</button>
     <figure class="lightbox-figure">
       <img class="lightbox-image" src="" alt="">
       <figcaption class="lightbox-caption"></figcaption>
     </figure>
-    <button class="lightbox-nav lightbox-next" type="button" aria-label="Proxima imagem">></button>
-    <div class="lightbox-thumbs" aria-label="Miniaturas da galeria"></div>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">></button>
+    <div class="lightbox-thumbs" aria-label="Gallery thumbnails"></div>
   </div>
 
   <script src="data/projects.js"></script>
