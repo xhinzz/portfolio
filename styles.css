@@ -83,6 +83,10 @@ button {
   fill: currentColor;
 }
 
+.social-links .email-link svg {
+  fill: none;
+}
+
 .main-nav {
   gap: 36px;
 }
